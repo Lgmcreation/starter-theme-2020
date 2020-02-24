@@ -1,0 +1,48 @@
+.burger {
+    display: none;
+}
+.headersite {
+    position: relative;
+    padding: .6em 0;
+    color: $header-text-color;
+    background-color: $header-bg-color;
+}
+.headersite_menu {
+    display: flex;
+}
+.headersite_logo {
+    width: 100px;
+    a {
+        display: block;
+        width: 100%;
+    }
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+.mainmenu {
+    ul {
+        display: flex;
+        li {
+            margin-right: .5em;
+            text-align: center;
+            &:last-of-type {
+                margin-right: 0;
+            }
+            &.current-menu-item {
+                a, span {
+                    border-bottom: 2px solid $color1;
+                }
+            }
+            a, span {
+                display: block;
+                margin-right: .5em;
+                padding: .4em .8em;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }
+}

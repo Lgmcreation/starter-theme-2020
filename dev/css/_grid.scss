@@ -1,0 +1,10 @@
+.wrapper {
+    width: 100%;
+    max-width: $grid;
+    margin-right: auto;
+    margin-left: auto;
+    &.w-pad {
+        padding-right: $grid-padding;
+        padding-left: $grid-padding;
+    }
+}

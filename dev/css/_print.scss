@@ -1,0 +1,87 @@
+@media print {
+    header {
+        display: none;
+    }
+    #site-main {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    @page {
+        margin: 2cm;
+    }
+    body {
+        color: #000000;
+        background: #ffffff !important;
+        font: 13pt Georgia, 'Times New Roman', Times, serif;
+        line-height: 1.3;
+    }
+    h1 {
+        font-size: 24pt;
+    }
+    h2, h3, h4 {
+        margin-top: 25px;
+        font-size: 14pt;
+    }
+    a {
+        page-break-inside: avoid;
+    }
+    blockquote {
+        page-break-inside: avoid;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+    img {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+    table, pre {
+        page-break-inside: avoid;
+    }
+    ul, ol, dl {
+        page-break-before: avoid;
+    }
+    a:link, a:visited, a {
+        text-align: left;
+        text-decoration: underline;
+        color: #552200;
+        background: transparent;
+        font-weight: bold;
+    }
+    a {
+        page-break-inside: avoid;
+    }
+    .entry iframe, ins {
+        display: none;
+        overflow: hidden !important;
+        width: 0 !important;
+        height: 0 !important;
+        white-space: nowrap;
+        line-height: 0 !important;
+    }
+    .embed-youtube, .embed-responsive {
+        position: absolute;
+        overflow: hidden;
+        height: 0;
+    }
+
+    p, address, li, dt, dd, blockquote {
+        font-size: 100%;
+    }
+
+    code, pre {
+        font-family: 'Courier New', Courier, mono;
+    }
+
+    ul, ol {
+        margin-bottom: 20pt;
+        margin-left: 18pt;
+        list-style: square;
+    }
+
+    li {
+        line-height: 1.6em;
+    }
+}

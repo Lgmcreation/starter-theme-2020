@@ -1,0 +1,26 @@
+
+/* Focus-visible */
+*:focus:not(.focus-visible) {
+    outline: none;
+}
+.focus-visible {
+    outline: lightgreen solid 2px;
+    box-shadow: 0 0 0 2px lightgreen;
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex='-1']:focus {
+    outline: 0;
+}
+.sr-only {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    word-wrap: normal !important;
+    border: 0;
+    clip-path: inset(50%);
+}

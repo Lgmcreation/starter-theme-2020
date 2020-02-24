@@ -1,0 +1,42 @@
+/*GRID*/
+$grid: 81em;
+$phone-width: 25em;
+$tablet-width: 48em;
+$desktop-width: 64em;
+/*MIXIN*/
+@mixin maxphone {
+    @media only screen and (max-width: #{$phone-width}) {
+        @content;
+    }
+}
+@mixin phone {
+    @media only screen and (min-width: #{$phone-width}) {
+        @content;
+    }
+}
+@mixin phone-tablet {
+    @media only screen and (min-width: #{$phone-width}) and (max-width: #{$tablet-width}) {
+        @content;
+    }
+}
+@mixin maxtablet {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media only screen and (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media only screen and (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin cover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
