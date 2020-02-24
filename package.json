@@ -1,0 +1,55 @@
+{
+  "name": "nouveausite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "npx gulp",
+    "prod": "NODE_ENV=production npx gulp build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "autoprefixer": "*",
+    "babelify": "*",
+    "browser-sync": "*",
+    "browserify": "*",
+    "css-mqpacker": "*",
+    "del": "*",
+    "gulp": "*",
+    "gulp-cssnano": "*",
+    "gulp-if": "*",
+    "gulp-image-resize": "*",
+    "gulp-imagemin": "*",
+    "gulp-mode": "*",
+    "gulp-newer": "*",
+    "gulp-noop": "*",
+    "gulp-notify": "*",
+    "gulp-plumber": "*",
+    "gulp-postcss": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-svgmin": "*",
+    "gulp-svgstore": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "lodash": "*",
+    "lodash.assign": "*",
+    "owl.carousel2": "*",
+    "vinyl-buffer": "*",
+    "vinyl-source-stream": "*",
+    "watchify": "*"
+  },
+  "dependencies": {
+    "jquery": "*",
+    "smoothscroll-polyfill": "*",
+    "@fancyapps/fancybox": "*",
+    "lightgallery.js": "*",
+    "slick-carousel": "*"
+  }
+}

@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /wp-login.php
+Disallow: /*?
+
+Disallow: /*/comments
+Disallow: */trackback
+Disallow: /*/feed
+
+Disallow: /cgi-bin
+Disallow: /*.php$
+Disallow: /*.inc$
+Disallow: /*.gz
+Disallow: /*.cgi
+
+Allow: /*css?*
+Allow: /*js?*
+
+Sitemap: https://monsite.com/sitemap_index.xml
